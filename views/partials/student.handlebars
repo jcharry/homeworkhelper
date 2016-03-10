@@ -1,0 +1,52 @@
+<!--Student Portal Page-->
+<div id='leftColumn' class='column'>
+    <div id='newRequest' class='box'>
+            <h3>New Request</h3>
+        <form method='POST' id='newRequestForm'>
+            <label for='subject'>Subject</label>
+            <select form='newRequestForm' id='subject' name='subject'>
+                <option>Biology</option>
+                <option>Earth Science</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+            </select>
+
+            <label for='description'>Description</label>
+            <textarea form='newRequestForm' id='newReqDescription' name='description' name='description'></textarea>
+
+            <label for='photo'>Upload a photo (optional)</label>
+            <input type='file' id='photo' name='photo'/>
+
+            <label for='bid'>Bid</label>
+            <input type='text' name='bid' id='bid'/>
+
+            <input type='submit'/>
+        </form>
+    </div>
+    <div id='messages' class='box'>
+        <h3>Messages</h3>
+    </div>
+</div>
+
+<div id='rightColumn' class='column'>
+    <div id='previousRequests' class='box'>
+        <h3 id=''>My Requests</h3>
+        {{#each results}}
+            {{>request this}}
+        {{/each}}
+    </div>
+</div>
+
+<div id='requestDetailPopup'>
+</div>
+
+<div id='sendMessagePopup'>
+    <div id='messageBox'>
+    </div>
+
+    <input type='text' id='messagebox'>
+    <button id='sendMessageButton' data-tutorId={{chosen}}>Send</button>
+
+</div>
+
+<script type="text/javascript" src='js/student.js'></script>

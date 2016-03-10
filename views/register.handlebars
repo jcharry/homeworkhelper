@@ -1,0 +1,23 @@
+<div id='registerBackground' class='pageBackground loginOrRegisterPage'></div>
+<div class='pageOverlay'></div> 
+
+<div id='registerPageContainer' class='singlePageContainer'>
+    <div id='register' class='formContainer'>
+        <h1>We're glad to have you!</h1>
+        <form method='post' action=''>
+            <label for='username'>Email</label>
+            <input type='text' name='username'> 
+
+            <label for='password'>Password</label>
+            <input type="password" name="password" value="">
+
+            <label for='account_type'>Are you a Student or a Tutor?</label>
+            <p> <input type="radio" name="account_type" value="student" checked>Student<br><input type="radio" name="account_type" value="tutor">Tutor<br></p>
+            <input type='submit'>
+        </form>
+    </div>
+</div>
+
+{{#if err}}
+    <p id='registerError'>{{err.message}}</p>
+{{/if}}

@@ -1,0 +1,15 @@
+<div id='dashboardBg'></div>
+<div id='dbOverlay' class='overlay'></div>
+
+<div class="main">
+    <div class="header">
+        <p>Welcome, {{#if student}}{{student.name}}{{/if}}{{#if tutor}}{{tutor.name}}{{/if}}</p>
+    </div>
+    <div class="content twocolumn">
+        {{#if student}} {{>student this}} {{/if}}
+        {{#if tutor}} {{>tutor this}} {{/if}}
+    </div>
+    <div class="footer"></div>
+</div>
+
+{{> nav}}

@@ -1,0 +1,27 @@
+One line pitch:
+Homework Helper is an on demand marketplace where students seeking immediate homework help can find qualified and experienced tutors to guide them through individual homework problems.
+
+There a tons of message boards for homework help.  Many students get private tutors (if their parents can afford it).  But what happens when you're struggling with a problem right now?  You just can't figure out that tough algebra problem.  Where do you go for help if you're at home working through a worksheet?  
+
+On this platform, the user (student) can logon, post a request, in the form of a written description or photo of the problem, for in-person help, and within minutes be connected with a tutor ready to video chat and help out with their homework.  Prices will be on a bid basis set by the student.  Tutors on the platform can see a running list of all incoming requests within subjects they decide to follow and can act on a request if they believe it worthwhile.  The student will see a list of all tutors who've responded to their request and can choose which tutor they'd like help from.  Only tutors who pass a competency exam will be allowed to respond to requests, and all tutors will have a public profile with ratings from each student they've helped.  If a tutor is unable to properly assist a student, they are encouraged to write a review and note that the tutor was not competent in the listed subject.  Students ratings of tutors will be pubilc, as well as any written reviews.  In the case of a very unhelpful tutor, the student can appeal to have their bid returned to them.  But with a robust review system, incapable tutors will be weeded out rather quickly.
+
+I doubt I'll be able to build a fully functional version of this in just the few weeks we have left, but I'm propsing that I tackle the following features:
+
+    1. Basic student portal
+        1. Allows student to submit requests for help, prompting them to upload photos or describe their current issue
+        2. Submission must be categorized within a specific subject (i.e. basic algebra, introductory physics, music theory, whatever other subjects kids take these days, but the focus in on problems that can be worked through, which lends itself best to math and science
+        3. Student submits a bid
+    2. Basic tutor portal
+        1. Filterable list
+        2. Ability to respond to student request
+    3. If both sides accept - implement video chat between the two parties
+
+If I have time    
+    1. Actual login system for users. How to manage this is kind of new to me.  I've used Parse in the past, but with parse going the way of old yeller, not sure how to implement the details of having user logins.
+    2. 
+
+Way future - if, like, I'm gonna make this a product for real
+    1. Handle payment info - again, totally new to me
+    2. Tutor competancy exams??? I'd need some serious help on this
+    
+

@@ -1,0 +1,44 @@
+<div id='searchBg' class='pageBackground'></div>
+<div id="searchOverlay" class='pageOverlay'></div>
+<div class='main'>
+
+    <div class='header'>
+        <form method='get' action='/search'>
+            <label for='bysubject'>By Subject</label>
+            <select name="bysubject">
+                <option value="none">---</option>
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="Earth Science">Earth Science</option>
+                <option value="all">All</option>
+            </select>
+            <label for='bygrade'>By Grade</label>
+            <select name="bygrade">
+                <option value="none">---</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="all">All</option>
+            </select>
+            <button type='submit'>Search</button>
+        </form>
+    </div>
+
+    <div class="content onecolumn">
+        {{#each results}}
+            {{>searchrequest this}}
+        {{/each}}
+    </div>
+
+    <div class="footer">
+    </div>
+</div>
+
+{{> nav}}
+
+<script type="text/javascript" src='js/request.js'></script>

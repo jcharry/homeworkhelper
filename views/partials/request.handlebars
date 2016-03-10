@@ -1,0 +1,21 @@
+{{#if open}}
+    <div class='request twocolumn' data-requestId={{_id}}>
+
+        <div class='column'>
+            <p>Subject: {{subject}}</p>
+            <p>Question: {{description}}</p>
+            <p>Bid: {{bid}}</p>
+        </div>
+
+        <div class='column requestResponder'>
+            {{#if hasResponder}}
+                <button class='helpAwaitsButton' data-requestId={{_id}}>Help Awaits!</button>
+            {{/if}}
+
+            {{#if shouldShowChosenResponder}}
+                <button class='openMessageDialog' id='openMessageDialog' data-accountid={{chosenResponder.id}} data-requestid={{_id}}>{{chosenResponder.username}} is ready to help you. Click to send a message</button>
+            {{/if}}
+        </div>
+    </div>
+{{/if}}
+
